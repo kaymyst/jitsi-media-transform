@@ -277,6 +277,10 @@ class RtpReceiverImpl @JvmOverloads constructor(
         audioLevelReader.forceMute = shouldMute
     }
 
+    override fun forceMuteVideo(shouldMuteVideo: Boolean) {
+        //videoBitrateCalculator. = shouldMuteVideo
+    }
+
     override fun stop() {
         running = false
         rtcpRrGenerator.running = false

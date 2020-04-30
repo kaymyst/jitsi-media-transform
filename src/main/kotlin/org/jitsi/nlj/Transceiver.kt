@@ -279,6 +279,17 @@ class Transceiver(
     }
 
     /**
+     * Forcibly mute or unmute the incoming video stream
+     */
+    fun forceMuteVideo(shouldMuteVideo: Boolean) {
+        when (shouldMuteVideo) {
+            true -> logger.info("Muting incoming video")
+            false -> logger.info("Unmuting incoming video")
+        }
+        rtpReceiver.forceMuteVideo(shouldMuteVideo)
+    }
+
+    /**
      * Get stats about this transceiver's pipeline nodes
      */
     override fun getNodeStats(): NodeStatsBlock {
