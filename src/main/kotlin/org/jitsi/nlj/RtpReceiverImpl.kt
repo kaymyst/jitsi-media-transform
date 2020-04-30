@@ -278,7 +278,7 @@ class RtpReceiverImpl @JvmOverloads constructor(
     }
 
     override fun forceMuteVideo(shouldMuteVideo: Boolean) {
-        //videoBitrateCalculator. = shouldMuteVideo
+        // videoBitrateCalculator. = shouldMuteVideo
     }
 
     override fun stop() {
